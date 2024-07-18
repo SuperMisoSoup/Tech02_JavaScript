@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="css/sample.css" />
+    <title>じゃんけんクエスト</title>
+  </head>
+
+  <body>
+    <!-- ===========ヘッダー=========== -->
+    <header>
+      <h1>スタート</h1>
+      <h2>
+        <font color="red">スタート</font>→PC→ボーナス→ボス
+      </h2>
+    </header>
+
+    <main>
+      <!-- ===========ステータス=========== -->
+      <div class="Status">
+        <div class="Status_user">
+          <h3><p>ステータス</p></h3>
+          <h4>
+            HP:<span id="userHpNum">100</span>
+            <ul>
+              <li id="pcGuBtn">グー50</li>
+              <li id="pcChoBtn">チョキ20</li>
+              <li id="pcParBtn">パー30</li>
+            </ul>
+          </h4>
+        </div>
+        
+        <div class="Status_pc"></div>
+      </div>
+
+      <!-- ===========ボタン=========== -->
+      <div class="Button" id="ButtonStart">
+        <center>
+          <p>スタート</p>
+        </center>
+      </div>
+
+    </main>
+
+    <footer></footer>
+
+    <script>
+      // ===========ボタン遷移===========
+      $("#ButtonStart").on("click", function () {
+        location.href = "Battle.html";
+      });
+    </script>
+  </body>
+</html>

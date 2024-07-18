@@ -1,0 +1,105 @@
+/* ===========ヘッダー=========== */
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+}
+
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+/* ===========全体=========== */
+
+h2{
+    text-align:center;
+}
+
+/* ===========ステータス=========== */
+.Status{
+    display: flex;
+}
+
+.Status_user{
+    width: 40%;
+    margin: auto;
+}
+.Status_pc{
+    width: 40%;
+    margin: auto;
+}
+
+ul{
+    padding: 0;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    text-align: left;
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #FFF;
+    display:table-cell;  /* 定義 */
+}
+
+/* ===========大ボタン=========== */
+.Button {
+  margin: auto; /*ボタン位置*/
+  display: flex; /*文字自由調整*/
+  justify-content: center; /*左右*/
+  align-items: center; /*上下*/
+  color: #fff;
+  background-color: #ffd61a;
+  height: 60px;
+  width: 300px;
+  border-bottom: 5px solid #ccc100;
+  border-radius: 5px;
+}
+.Button:hover,
+a.Button:hover {
+  margin-top: 3px;
+  color: #fff;
+  background: #f9b916;
+  border-bottom: 2px solid #ccc100;
+}
+
+/* ===========じゃんけんボタン=========== */
+#userGuBtn{
+    background: #e5004f;
+}
+#userGuBtn:hover{
+    background: #E550A0;
+}
+#userChoBtn{
+    background: #fff100;
+}
+#userChoBtn:hover{
+    background: #FFFF28;
+}
+#userParBtn{
+    background: #0086d1;
+}
+#userParBtn:hover{
+    background: #3CB4D1;
+    /* color:#fff; */
+}
+
+#pcGuBtn{
+    background: #e5004f;
+}
+#pcChoBtn{
+    background: #fff100;
+}
+#pcParBtn{
+    background: #0086d1;
+}
+
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+/* ===========フッター=========== */
